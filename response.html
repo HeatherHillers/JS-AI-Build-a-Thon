@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contoso Outdoor Company</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fafbfa;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #222;
+    }
+    .container {
+      max-width: 950px;
+      margin: 32px auto;
+      background: #fff;
+      padding: 32px 20px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+      border-radius: 18px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .handwritten {
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+      font-size: 2.6rem;
+      font-weight: bold;
+      color: #556;
+      margin-top: 0;
+      margin-bottom: 2px;
+      letter-spacing: 2px;
+      text-shadow: 1px 2px 0 #dee1d7;
+      line-height: 1.1;
+    }
+    .subtitle {
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+      font-size: 1.6rem;
+      color: #889;
+      margin-top: 0;
+    }
+    section {
+      margin-bottom: 32px;
+    }
+    .section-title {
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+      font-size: 1.5rem;
+      margin: 0 0 8px;
+      color: #2a4444;
+      letter-spacing: 1px;
+    }
+    .section-desc {
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+      font-size: 1.08rem;
+      margin: 0 0 18px 0;
+      color: #444a;
+      font-style: italic;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px 20px;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 540px) {
+      .container {
+        padding: 10px 2vw;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .handwritten {
+        font-size: 2rem;
+      }
+      .subtitle {
+        font-size: 1.1rem;
+      }
+      .section-title {
+        font-size: 1.2rem;
+      }
+    }
+    .product {
+      background: #f3f4f3;
+      border-radius: 12px;
+      padding: 19px 11px 13px 11px;
+      box-shadow: 0 1px 7px #cdd0d3, 0 1px 0 #fff inset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px dashed #c4c4c2;
+      min-height: 195px;
+      justify-content: flex-start;
+      text-align: center;
+    }
+    .product svg {
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 2px;
+    }
+    .product-name {
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+      font-size: 1.07rem;
+      color: #26323c;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .product-price {
+      color: #38576a;
+      font-weight: bold;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="handwritten">Contoso Outdoor<br>Company</div>
+    </header>
+    
+    <section>
+      <div class="section-title">Tents</div>
+      <div class="section-desc">Unfold adventure with Contoso's range of tents.</div>
+      <div class="grid">
+        <div class="product">
+          <!-- Tent icon (triangle) -->
+          <svg width="60" height="48" viewBox="0 0 60 48"><polygon points="5,43 30,7 55,43" fill="none" stroke="#807B6D" stroke-width="2"/><line x1="30" y1="7" x2="30" y2="43" stroke="#807B6D" stroke-width="2"/></svg>
+          <div class="product-name">TrailMaster X4 Tent</div>
+          <div class="product-price">$200</div>
+        </div>
+        <div class="product">
+          <!-- Tent with two lines -->
+          <svg width="60" height="48" viewBox="0 0 60 48">
+            <polygon points="10,43 30,13 50,43" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <line x1="25" y1="23" x2="35" y2="23" stroke="#807B6D" stroke-width="2"/>
+            <line x1="25" y1="23" x2="30" y2="13" stroke="#807B6D" stroke-width="2"/>
+            <line x1="35" y1="23" x2="30" y2="13" stroke="#807B6D" stroke-width="2"/>
+          </svg>
+          <div class="product-name">Alpine Explorer Tent</div>
+          <div class="product-price">$300</div>
+        </div>
+        <div class="product">
+          <!-- Two tents side by side -->
+          <svg width="60" height="48" viewBox="0 0 60 48">
+            <polygon points="8,43 22,19 36,43" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <polygon points="24,43 38,19 52,43" fill="none" stroke="#807B6D" stroke-width="2"/>
+          </svg>
+          <div class="product-name">Sky View 2-Person Tent</div>
+          <div class="product-price">$380</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Backpack</div>
+      <div class="section-desc">
+        Our backpack category is equipped to accompany you in every twist and turn.
+      </div>
+      <div class="grid">
+        <div class="product">
+          <!-- Backpack icon -->
+          <svg width="58" height="58" viewBox="0 0 58 58">
+            <rect x="14" y="22" width="30" height="25" rx="7" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <ellipse cx="29" cy="22" rx="11" ry="10" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <line x1="19" y1="35" x2="39" y2="35" stroke="#807B6D" stroke-width="2"/>
+          </svg>
+          <div class="product-name">Adventurer Pro Backpack</div>
+          <div class="product-price">$60</div>
+        </div>
+        <div class="product">
+          <!-- Backpack with rolltop -->
+          <svg width="58" height="58" viewBox="0 0 58 58">
+            <rect x="16" y="26" width="26" height="19" rx="6" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <ellipse cx="29" cy="22" rx="13" ry="7" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <line x1="29" y1="29" x2="29" y2="45" stroke="#807B6D" stroke-width="2"/>
+          </svg>
+          <div class="product-name">Summit Climber Backpack</div>
+          <div class="product-price">$70</div>
+        </div>
+        <div class="product">
+          <!-- Small Daypack -->
+          <svg width="58" height="58" viewBox="0 0 58 58">
+            <rect x="20" y="30" width="18" height="16" rx="5" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <ellipse cx="29" cy="30" rx="10" ry="8" fill="none" stroke="#807B6D" stroke-width="2"/>
+          </svg>
+          <div class="product-name">TrailLite DayPack</div>
+          <div class="product-price">$40</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Hiking Clothing</div>
+      <div class="section-desc">Step into nature with Contoso Outdoors hiking clothes.</div>
+      <div class="grid">
+        <div class="product">
+          <!-- Simple jacket icon -->
+          <svg width="55" height="52" viewBox="0 0 55 52">
+            <rect x="14" y="18" width="27" height="26" rx="7" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <path d="M14,18 Q27.5,1 41,18" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <line x1="27.5" y1="10" x2="27.5" y2="44" stroke="#807B6D" stroke-width="2"/>
+          </svg>
+          <div class="product-name">Summit Breeze Jacket</div>
+          <div class="product-price">$60</div>
+        </div>
+        <div class="product">
+          <!-- Simple pants icon -->
+          <svg width="40" height="52" viewBox="0 0 40 52">
+            <rect x="8" y="11" width="24" height="34" rx="6" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <line x1="20" y1="11" x2="20" y2="45" stroke="#807B6D" stroke-width="2"/>
+          </svg>
+          <div class="product-name">Trail Blaze Pants</div>
+          <div class="product-price">$80</div>
+        </div>
+        <div class="product">
+          <!-- Hiking boots icon -->
+          <svg width="60" height="44" viewBox="0 0 60 44">
+            <rect x="12" y="18" width="36" height="18" rx="5" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <rect x="18" y="32" width="24" height="6" rx="2" fill="none" stroke="#807B6D" stroke-width="2"/>
+            <circle cx="18" cy="36" r="2" fill="#807B6D"/>
+            <circle cx="42" cy="36" r="2" fill="#807B6D"/>
+          </svg>
+          <div class="product-name">TREKSTAR Boots</div>
+          <div class="product-price">$120</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
